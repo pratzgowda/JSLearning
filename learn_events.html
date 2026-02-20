@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>JS events</title>
+    <script>
+      function sayHello() {
+        document.getElementById("hello").innerHTML = "Hello Function";
+      }
+
+      function over() {
+        document.getElementById("hello").innerHTML = "On mouse over";
+      }
+
+      function out() {
+        document.getElementById("hello").innerHTML = "On mouse out";
+      }
+      function change() {
+        document.getElementById("hello").innerHTML = "On change implementation";
+      }
+    </script>
+  </head>
+  <body>
+    <h1 id="hello"></h1>
+    <input type="text" onchange="change()" />
+    <button onclick="sayHello()" onmouseover="over()" onmouseout="out()">
+      Submit
+    </button>
+  </body>
+</html>
